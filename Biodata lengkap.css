@@ -1,0 +1,173 @@
+/* UNIVERSAL SELECTOR */
+/* Ini biar semua element tidak ada margin, padding default, dan ukuran box nya jadi lebih rapi*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif; /* Agar font nya enak dibaca */
+}
+
+/* TAG SELECTOR */
+/* Mengatur body halaman, seperti background, pending dan warna text */
+.background-container {
+    /*posisi background tetap dan tidak akan berubah*/
+    position: fixed;
+    /*imagenya pasti dimulai dari layar paling atas*/
+    top: 0;
+    /*lebarnya menyesuaikan view layar*/
+    width: 100vw;
+    /*tingginya menyesuaikan view layar*/
+    height: 100vh;
+    /*gradasi background mulai dari atas kebawah*/
+    background-image: linear-gradient(to bottom, #1A283564, #1A2835);
+    /*posisi background di tengah*/
+    background-position: center;
+    /* untuk background berada di layer paling belakang dari yang lain*/
+    z-index: -1;
+    opacity: 0.8;
+
+}
+
+/* Warna untuk semua judul h1 dan h2 */
+h1, h2 {
+    color: #e79141; /* Warna oranye */
+}
+
+/* ID SELECTOR */
+/* Bagian utama yang menapung biodata siswa */
+#main-container {
+    width: 700px; /* Lebar kontainernya */
+    place-self: center; /* Agar posisinya ditengah */
+    background-color: transparent; /* Background putih */
+    padding: 25px; /* Jarak isi ke pinggir kontainer */
+    margin-bottom: 20px; /* Jarak bawah antar section */
+    border-radius: 12px; /* SUdut kotak dibikin melengkung */
+    box-shadow: 0 0 10px rgba(0,0,0,0.4); /* Bayangan lembut agar terlihat naik*/
+}
+
+/* Headder dan footer agar etxt nya ditengah */
+#header, #footer {
+    text-align: center; /* Agar semua isi rata tengah */
+    margin-bottom: 20px; /* Memberikan jarak bawah */
+}
+
+/* CLASS SELECTORS */
+/* Ukuran dan tampilan judul utama halaman */
+.judul {
+    font-size: 32px; /* Ukuran huruf besar */
+    margin-bottom: 10px; /* Memberikan jarak bawah */
+}
+
+/* Deskripsi kecil dibawah judul */
+.deskripsi {
+    font-size: 16px; /* Ukuran text sedang */
+    color: #666; /* Warna abu abu agar tidak terlalu mencolok */
+}
+
+/* Container untuk foto profil */
+.foto-container {
+    text-align: center; /* Posisi foto ditengah */
+    margin-bottom: 20px; /* Memberikan jarak kebawah */
+}
+
+/* Styling foto profil */
+.foto-profil {
+    border-radius: 50%; /* Agar fotonya menjadi bulat */
+    width: 150px; /* Ukuran lebar */
+    height: 150px; /* Ukuran tinggi */
+    object-fit: cover; /* Biar gambar tidak gepeng */
+    border: 3px solid #3498db; /* Memberikan broder warna biru muda */
+    transition: transform 0.3s;
+}
+.foto-profil:hover {
+    transform: scale(1.10) rotate(-3deg);
+}
+
+/* Tabel biodata */
+.tabel-biodata {
+    width: 100%; /* Tabel selebar container */
+    margin: auto; /* Tengahi tabel */
+    border-collapse: collapse; /* Hapus jarak antar garis tabel */
+    font-size: 16px; /* Ukuran textnya */
+}
+
+/* Label di kolom pertam tabel */
+.label {
+    font-weight: bold; /* Huruf tebal untuk tabel */
+    width: 150px; /* Lebar kolom tabel */
+    color: #2d3436; /* Warna abu abu gelap */
+    padding: 8px; /* Ruang dan sel tabel */
+}
+
+/* Bagian kotak lain seperti hobi dan form */
+.section-box {
+    width: 700px; /* Lebar container */
+    place-self: center; /* Agar posisinya ditengah */
+    background-color: transparent; /* Warna bacground */
+    padding: 20px; /* Jarak isi ke pinggir */
+    margin-bottom: 20px; /* Jarak antar section */
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0 0 8px rgba(0,0,0,0.4); /* Bayangan tipis */
+}
+
+/* Judul kecil dalam section */
+.subjudul {
+    margin-bottom: 12px; /* Kasih jarak kebawah */
+}
+
+/* List item buat hobi */
+.list-hobi li {
+    list-style: circle; /* Pakai lingakaran kecil sebagai bullet */
+    margin-left: 20px; /* Jarak ke kiri agar rapi */
+    margin-bottom: 6px; /* Jarak antar item */
+}
+
+/* styling untuk link media sosial */
+.tautan {
+    color: #2980b9; /* Warna biru pada link */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    font-weight: bold; /* Agar lebih tegas fontnya*/
+}
+
+/* Waktu link di hover, muncul garis bawah */
+.tautan:hover {
+    text-decoration: underline;
+}
+
+/* From kotak */
+.form-kontak {
+    display: flex; /* Mengunakan flex box agar kolom rapi */
+    flex-direction: column; /* Semua item ditumpuk vertikal */
+    gap: 10px; /* Jarak antar element form */
+}
+
+/* styling input dan textarea*/
+.form-kontak input,
+.form-kontak textarea {
+    padding: 10px; /* Isi input agar tidak mepet */
+    border: 1px solid #ccc; /* Garis pinggir berwarna abu abu muda */
+    border-radius: 6px; /* Sudut kotak dibuat melengkung */
+}
+
+/* Tombol kirim */
+.form-kontak button {
+    background-color: #3498db; /* Warna biru terang */
+    color: white; /* warna text putih */
+    padding: 10px; /* Ukuran tombol */
+    border: none; /* Untuk menghapus border default */
+    border-radius: 6px; /* Sudut tombol bulat */
+    cursor: pointer; /* Mengubah cursor jadi tangan waktu hover */
+}
+
+/* Efek hover di tombol */
+.form-kontak button:hover {
+    background-color: #2980b9; /* Warna backgruond biru agak gelap */
+}
+
+/* Styling buat footer */
+#footer {
+    font-size: 14px; /* Ukuran huruf kecil */
+    color: #888; /* Warna abu abu */
+    padding-top: 20px; /* Jarak ke atas */
+}
+

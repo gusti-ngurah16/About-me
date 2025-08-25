@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!-- Menentukan jenis dokumen sebagai HTML5 -->
+<html lang="en"> <!-- Awal element HTML dengan bahasa indonesia -->
+<head> <!-- Bagian head untuk metadata dan link -->
+    <meta charset="UTF-8"> <!-- Menentukan karakter encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsif layout di perangkat mobile -->
+    <title>Biodata Siswa</title> <!-- judul tab browser -->
+    <link rel="stylesheet" href="Biodata lengkap.css"> <!-- Menghubungkan file CSS eksternal -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body> <!-- Awal konten yang ditampilkan dihalaman -->
+
+    <!-- Header -->
+    <header id="header"> <!-- Bagian header, diberikan ID untuk styling khusus -->
+        <h1 class="judul">Biodata Diri Siswa</h1> <!-- Judul utama halaman, mengunakan class -->
+        <p class="deskripsi">Halaman ini menampilkan informasi lengkap tentang siswa RPL</p> <!-- Deskripsi singkat -->
+    </header>
+    <br><br>
+
+    <div class="background-container">
+        <img src="gambar anime.jpg" class="background-container" alt="bg"/>
+    </div>
+
+    <!-- Biodata Siswa -->
+    <section id="main-container" data-aos="fade-up" data-aos-duration="1000"> <!-- Bagian untuk mengisi data siswa -->
+        <div class="foto-container"> <!-- Untuk menampung hasil foto -->
+            <img src="gmbar1.jpg" alt="foto profil" class="foto-profil"> <!-- Gambar profil siswa -->
+        </div>
+
+        <table class="tabel-biodata"> <!-- Tabel untuk menapilkan biodata siswa -->
+            <tr> <!-- Baris pertama -->
+                <td class="label">Nama</td> <!-- Kolom label -->
+                <td>: I Gusti Ngurah Primarta Okan Purena</td> <!-- Kolom isi -->
+            </tr>
+            <tr>
+                <td class="label">NISN</td>
+                <td>: 7144</td>
+            </tr>
+            <tr>
+                <td class="label">Kelas</td>
+                <td>: XI RPL 4</td>
+            </tr>
+            <tr>
+                <td class="label">Alamat</td>
+                <td>: Jln.ByPass Ngurah Rai, Gg.Walet No.5 Pesanggaran</td>
+            </tr>
+            <tr>
+                <td class="label">Tanggal Lahir</td>
+                <td>: 16 Oktober 2008</td>
+            </tr>
+        </table>
+    </section>
+
+
+    <!-- Hobi dan Minat -->
+    <section class="section-box" data-aos="fade-up" data-aos-duration="1000"> <!-- Bagian untuk menulis hobi dan minat -->
+        <h2 class="subjudul">Hobi & Minat</h2> <!-- Subjudul -->
+        <ul class="list-hobi"> <!-- List untuk menapilkan hobi -->
+            <li>Sepak Bola</li> <!-- Hobi pertama -->
+            <li>Ngoding</li> <!-- Minat pertama -->
+            <li>CyberSecurity</li> <!-- minat kedua -->
+            <li>Membaca Manga</li> <!-- Hobi kedua -->
+        </ul>
+    </section>
+
+    <!-- Link Media Sosial -->
+    <section class="section-box" data-aos="fade-up" data-aos-duration="1000"> <!-- Bagian untuk menaruh link sosmed -->
+        <h2 class="subjudul">Media Sosial</h2> <!-- Judul a=bagian sosmed -->
+        <p>kunjungi profil saya:</p> <!-- Text pembuka -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="width" width="12px"><a href="https://www.instagram.com/igusti_ngurah16/" target="_blank" class="tautan">Instagram</a> <!-- Link menuju Instagram --> |
+        <img src="https://static.vecteezy.com/system/resources/previews/023/741/129/original/tiktok-logo-icon-social-media-icon-free-png.png" alt="width" width="12px"><a href="https://www.tiktok.com/@ngurahsans16?_t=ZS-8yQceLVZXHu&_r=1" target="_blank" class="tautan">Tiktok</a> <!-- Link menuju TikTok -->
+    </section>
+
+    <!-- Form Kotak -->
+    <section class="section-box" data-aos="fade-up" data-aos-duration="1000"> <!-- Bagian untuk form kotak -->
+        <h2 class="subjudul">Hubungi Saya</h2> <!-- Judul form kotak -->
+        <form action="#" method="post" class="form-kontak"> <!-- Form untuk mengisi nama dan pesan -->
+            <label for="nama">Nama:</label> <!-- Label untuk Input nama -->
+            <input type="text" id="nama" name="nama" required> <!-- Input text nama -->
+
+            <label for="pesan">Pesan:</label> <!-- Label untuk Input Pesan -->
+            <textarea id="pesan" name="pesan" rows="4" required></textarea> <!-- Kolom menulis pesan -->
+
+            <button type="submit">Kirim</button> <!-- Tombol untuk mengirim form -->
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer"> <!-- Bagian paling bawah halaman -->
+        <p>&copy; 2025 Ngurah - XI RPL 4</p> <!-- Hak cipta atau kredit -->
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+</body>
+</html>
